@@ -24,7 +24,7 @@ pipeline {
                 script {
                     // Display the content of helloworld.py using the 'type' command
                     echo "Verifying the file content"
-                    cat helloworld.py
+                    sh 'cat helloworld.py'
                 }
             }
         }
