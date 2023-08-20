@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // Create the helloworld.py file with the specified content
                     echo "building the helloworld.py file.."
-                    echo "print('hello world')" > helloworld.py
+                    sh 'echo "print(\'hello world\')" > helloworld.py'
                 }
             }
         }
