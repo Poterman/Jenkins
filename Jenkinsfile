@@ -36,7 +36,7 @@ pipeline {
                         git commit -m "Update helloworld.py"
                         git push origin main  // Assuming main is the default branch
                     '''
-                }
+                
             }
         }
     }
