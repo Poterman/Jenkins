@@ -39,6 +39,8 @@ pipeline {
 
                     // Commit and push the changes back to the repository
                     sh '''
+                        git config user.email "daniel.poterman@gmail.com"
+                        git config user.name "Poterman"
                         git add helloworld.py
                         git commit -m "Update helloworld.py"
                         git push origin main  // Assuming main is the default branch
