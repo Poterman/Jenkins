@@ -1,7 +1,16 @@
 pipeline {
     agent any
-           
-        stage('Build') {
+        
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the repository
+                checkout scm
+            }
+        }       
+        
+    
+    stage('Build') {
             steps {
                 script {
                     // Create the helloworld.py file with the specified content
