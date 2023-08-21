@@ -45,6 +45,7 @@ pipeline {
                         git commit -m "Update helloworld.py"
                         git push -u -f origin master
                     '''
+                    echo "Done"
                 }
             }
         }
