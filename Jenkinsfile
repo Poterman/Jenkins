@@ -43,7 +43,7 @@ pipeline {
                         git config user.name "Poterman"
                         git add helloworld.py
                         git commit -m "Update helloworld.py"
-                        git push origin main
+                        git push -u -f origin master
                     '''
                 }
             }
