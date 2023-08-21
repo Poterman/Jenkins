@@ -33,8 +33,7 @@ pipeline {
             steps {
                 script {
                     echo "Deploying code into GitHub"
-                    // The credentials you've configured in Jenkins will be used here
-                    // Just specify the repository URL and Jenkins will handle authentication
+                    // Specify the repository URL and Jenkins will handle authentication
                     def scmVars = checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Poterman/Jenkins.git']]])
 
                     // Commit and push the changes back to the repository
